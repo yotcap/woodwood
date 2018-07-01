@@ -1,0 +1,57 @@
+
+.mainPart{
+	width:1100px;
+	height:auto;
+	background:#C3C;
+	}
+.topColumn{
+	width:auto;
+	height:50px;
+	background:#CCC;
+	overflow:hidden;
+	}
+.topColumn span{
+	margin:15px 0px 0px 70px;
+	display:block;
+	}
+.topUserName{float:left;}
+/*------------leftColumn-----------------*/
+.leftColumn{
+	width:250px;
+	height:650px;
+	background:#9C6;
+	float:left;
+	}
+.userAvatar{
+	width:79px;
+	margin:120px 0px 0px 80px;
+	}
+.userTab{
+	padding-left:20px;
+	margin:70px 0px 0px 0px;
+	width:200px;
+	}
+.userTab a{color:#000;}
+.userTab div{
+	margin-top:15px;
+	border:2px solid;
+	height:40px;
+	padding:10px 0px 0px 60px;
+	}
+.userTab div:hover{background:#966;}
+.uInfor{}
+/*---------------mainColumn-----------------------*/
+.mainColumn{
+	width:850;
+	height: 650px;
+	background:#CCF;
+
+	}
+.mainColumn iframe{
+	height:650px;
+	width:850px;
+	
+	}
+.inforFrame{
+	
+	}

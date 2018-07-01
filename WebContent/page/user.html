@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>userPage</title>
+<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+<link rel="stylesheet" type="text/css" href="../css/webmain.css"/>
+<script type="text/javascript" src="../js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-97px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="bottomBack">
+    	<div class="yb_conct">
+        	<div class="yb_bar">
+            	<ul>
+                      <li class="yb_top">返回顶部</li>
+                      <li class="yb_login"><a target="_blank" href="log.html">登录</a></li>
+                      <li class="yb_QQ">
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1050376641&site=qq&menu=yes" title="即刻发送您的需求">在线咨询</a>
+                      </li>
+                      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+                        <img class="hd_qr" src="../img/weixin.jpg" width="110" alt="关注你附近"> </li>
+    			</ul>
+            </div>
+        </div>
+    	<div class="containerHeader">
+        	<div class="headerHome">
+        		<span><a href="../index.html">WebCap</a></span>
+            </div>
+            <nav class="mainMenu" id="menu">
+            	<ul>
+                	<li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <div class="mainPart">
+        	<div class="topColumn">
+            	<span class="topUserName">早上好！</span>
+                <span>张三</span>
+            </div>
+            <div class="leftColumn">
+            	<div class="userAvatar">
+                	<img src="../img/avtar.png" />
+                </div>
+                <div class="userTab">
+                	<a href="p/uInfor.html" target="mainFrame"><div>个人信息</div></a>
+                    <a href="p/uPosts.html" target="mainFrame"><div>我的帖子</div></a>
+                    <a href="p/uMessage.html" target="mainFrame"><div>留言管理</div></a>
+                    <a href="p/uAccount.html" target="mainFrame"><div>账号管理</div></a>
+                </div>
+            </div>
+            <div class="mainColumn">
+            	<iframe src="p/uInfor.html" scrolling="auto" name="mainFrame" class="inforFrame"  allowTransparency="true">
+                	
+                </iframe>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="copy-rights">
+        	<p>Copyright &copy; 2017.Company name All rights reserved.Powered by <a href="http://www.sobaho.com">www.sobaho.com</a></p>
+        </div> 
+    </div>
+</body>
+</html>
